@@ -11,13 +11,10 @@
 using namespace std;
 
 int main() {
-    declination declin;
+    declination declin; //Creat object for declination angle calculations.
     
     //Set day for which declination angle is to be calculated, and print angle:
     declin.date_setter();
     declin.print_declination();
-    
+    return 0;
 }
-
-
-

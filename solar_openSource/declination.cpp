@@ -16,10 +16,11 @@
 #include <cmath>
 #include "declination.hpp"
 
+
 void declination::date_setter(){
     std::cout << "Enter month (1-12): ";
     std::cin >> month;
-    std::cout << "\nEnter day: ";
+    std::cout << "Enter day: ";
     std::cin >> day;
     set_dayNumber();
 };
