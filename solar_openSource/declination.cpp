@@ -92,7 +92,7 @@ void declination::set_dayNumber(){
 double declination::dec() {
     //int day;
     double delta;
-    delta = 23.45 * sin((M_PI/180)*(360.0/365.0) * (dayNumber + 284.0));
+    delta = 23.45  * sin(2 * M_PI * ((284 + dayNumber)/365.0));
     return delta;
 }
 

@@ -18,7 +18,7 @@ class declination{
     std::string mon;
 public:
     declination();
-    double dec();   //calculation of declination angle.
+    double dec();   //calculation of declination angle. See https://pvpmc.sandia.gov/modeling-steps/1-weather-design-inputs/sun-position/simple-models/
     void date_setter(); //Asks user to enter month and day.
     void print_declination();
     void set_dayNumber();   //Get day number based on month and day input by user
