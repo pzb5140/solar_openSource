@@ -17,9 +17,10 @@ class declination{
     int day, month, dayNumber;
     std::string mon;
 public:
-    double dec();
-    void date_setter();
+    declination();
+    double dec();   //calculation of declination angle.
+    void date_setter(); //Asks user to enter month and day.
     void print_declination();
-    void set_dayNumber();
-    
+    void set_dayNumber();   //Get day number based on month and day input by user
+    ~declination();
 };

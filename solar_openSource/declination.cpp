@@ -16,6 +16,9 @@
 #include <cmath>
 #include "declination.hpp"
 
+declination::declination(){
+    std::cout << "Creating object of type declination...\n";
+}
 
 void declination::date_setter(){
     std::cout << "Enter month (1-12): ";
@@ -23,7 +26,11 @@ void declination::date_setter(){
     std::cout << "Enter day: ";
     std::cin >> day;
     set_dayNumber();
-};
+}
+
+declination::~declination(){
+    std::cout << "Deleting object of type declination.\n\n";
+}
 
 
 void declination::set_dayNumber(){
@@ -90,6 +97,6 @@ double declination::dec() {
 }
 
 
-void declination::print_declination(){
+void declination::print_declination() {
     std::cout << "\nDeclination angle on " << day << " " << mon << " is: " << dec() << std::endl;
 }
